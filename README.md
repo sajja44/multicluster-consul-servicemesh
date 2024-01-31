@@ -40,3 +40,21 @@ aws eks update-kubeconfig --region eu-central-1 --name myapp-eks-cluster
 # test configuration
 kubectl get svc
 ```
+
+#### Get access to AKS cluster
+```sh
+
+#Run the following commands
+
+#Login to your azure account
+az login
+
+#Set the cluster subscription
+az account set --subscription <YourSubscriptionID>
+
+#Download cluster credentials
+az aks get-credentials --resource-group aks-rg --name aks-demo --overwrite-existing
+
+# test configuration
+kubectl get svc
+```
