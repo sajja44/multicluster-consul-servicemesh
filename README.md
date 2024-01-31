@@ -46,7 +46,7 @@ kubectl get svc
 
 #Run the following commands
 
-#Login to your azure account
+#Install Azure cli & Login to your azure account
 az login
 
 #Set the cluster subscription
